@@ -1,11 +1,22 @@
-body {
+*body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/* Familia de fuentes */
     font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: hsl(170, 75%, 81%); /* El color del fondo de la página web */
-    color: hsl(27, 58%, 54%); /* El color del texto*/ 
+    background-color:#FFFFFF; /* El color del fondo de la página web */
+    color: #FD98FB; /* El color del texto*/ 
+    text-decoration-color:#D6FF6B/*Cuando se ajusta el color del texto con la etiqueta de color*/ 
 }
+@keyframes color-change { 
+    0% { color: greenyellow; } 
+    1% { color: yellow; } 
+    2% { color: orangered; } 
+    3% { color: palevioletred; } 
+    25%{ color: blue;}
+    50% { color: red; } 
+    75% { color:aquamarine}
+    100% { color: orange; } } 
 h1 {
-    color: rgb(46, 194, 46); /* El color de la cabecera */
+    color: #5988ff; /* El color de la cabecera */
     font-size: 24px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
-}
+    animation: color-change 3s infinite;
+} 
